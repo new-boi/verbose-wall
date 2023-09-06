@@ -1,32 +1,27 @@
-// gapi.client.init({
-//     apiKey: '0b0598a13a504cf8c531c0ef14fd426631fcd8c3',
-//     discoveryDocs: ['https://sheets.googleapis.com/$discovery/rest?version=v4'],
-//   }).then(() => {
-//     function readDataFromSheet() {
-//         gapi.client.sheets.spreadsheets.values.get({
-//           spreadsheetId: '1t-GrI2hdGaFUobDVyGCCl-zxfH5wP_2bErOdaDJXJuo',
-//           range: 'Sheet1', // Adjust the sheet and range as needed
-//         }).then((response) => {
-//           const values = response.result.values;
-      
-//           if (values && values.length > 0) {
-//             values.forEach((row, index) => {
-//               const name = row[0];
-//               const location = row[1];
-//               const sentence = row[2];
-//               console.log(`Row ${index + 2}: Name: ${name}, Location: ${location}, Sentence: ${sentence}`);
-//             });
-//           } else {
-//             console.log('No data found in the specified range.');
-//           }
-//         }).catch((error) => {
-//           console.error('Error reading data from Google Sheets:', error);
-//         });
-//       }
-//   }).catch((error) => {
-//     console.error('Error initializing Google API client:', error);
-//   });
 
+
+
+function readDataFromSheet() {
+    gapi.client.sheets.spreadsheets.values.get({
+      spreadsheetId: '1t-GrI2hdGaFUobDVyGCCl-zxfH5wP_2bErOdaDJXJuo',
+      range: 'Sheet1', // Adjust the sheet and range as needed
+    }).then((response) => {
+      const values = response.result.values;
+  
+      if (values && values.length > 0) {
+        values.forEach((row, index) => {
+          const name = row[0];
+          const location = row[1];
+          const sentence = row[2];
+          console.log(`Row ${index + 2}: Name: ${name}, Location: ${location}, Sentence: ${sentence}`);
+        });
+      } else {
+        console.log('No data found in the specified range.');
+      }
+    }).catch((error) => {
+      console.error('Error reading data from Google Sheets:', error);
+    });
+  }
 
 
   function initGoogleApiClient() {
@@ -43,7 +38,7 @@
   }
 
 
-
+  gapi.load('client', initGoogleApiClient);
 
 var qr_btn = document.getElementById("qr_btn");
 
@@ -80,5 +75,3 @@ qr_btn.onclick=function(){
 
     
 }
-
-  gapi.load('client', initGoogleApiClient);
