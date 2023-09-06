@@ -27,7 +27,7 @@ function readDataFromSheet() {
   function initGoogleApiClient() {
     // Initialize the Google API client with your API key and discoveryDocs
     gapi.client.init({
-      apiKey: '0b0598a13a504cf8c531c0ef14fd426631fcd8c3',
+      apiKey:'bb2dc616165c8c4141c3d149c5313c35cd315dee',
       discoveryDocs: ['https://sheets.googleapis.com/$discovery/rest?version=v4'],
     }).then(() => {
       // Client is initialized and ready to make API calls
