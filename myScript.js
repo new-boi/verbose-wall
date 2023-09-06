@@ -35,17 +35,18 @@ function readDataFromSheet() {
       const values = response.result.values || [];
       const lastRow = values.length + 1; // Calculate the next row
 
-      gapi.client.sheets.spreadsheets.values.update({
-        spreadsheetId,
-        range: `Sheet1!A${lastRow}:C${lastRow}`, // Append to the last row
-        valueInputOption: 'RAW',
-        resource: { values },
-      }).then(() => {
-        console.log('Data added to the last row of Google Sheets.');
-      }).catch((error) => {
-        console.error('Error writing to Google Sheets:', error);
+        gapi.client.sheets.spreadsheets.values.update({
+          spreadsheetId,
+          range: `Sheet1!A${lastRow}:C${lastRow}`, // Append to the last row
+          valueInputOption: 'RAW', // Specify valueInputOption here
+          resource: { values },
+        }).then(() => {
+          console.log('Data added to the last row of Google Sheets.');
+        }).catch((error) => {
+          console.error('Error writing to Google Sheets:', error);
+        });
       });
-    });
+
 
 }
 
