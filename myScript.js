@@ -43,7 +43,7 @@
   }
 
 
-  gapi.load('client', initGoogleApiClient);
+
 
 var qr_btn = document.getElementById("qr_btn");
 
@@ -80,3 +80,5 @@ qr_btn.onclick=function(){
 
     
 }
+
+  gapi.load('client', initGoogleApiClient);
