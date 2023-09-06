@@ -53,7 +53,7 @@ function readDataFromSheet() {
   function initGoogleApiClient() {
     // Initialize the Google API client with your API key and discoveryDocs
     gapi.client.init({
-      apiKey: '0b0598a13a504cf8c531c0ef14fd426631fcd8c3',
+      apiKey: 'AIzaSyAM2PqI2i42qud73TZPP0XLfpFXk6DRueI',
       discoveryDocs: ['https://sheets.googleapis.com/$discovery/rest?version=v4'],
     }).then(() => {
 
@@ -67,7 +67,7 @@ function readDataFromSheet() {
   function initGoogleApiClientWrite(namee) {
     // Initialize the Google API client with your API key and discoveryDocs
     gapi.client.init({
-      apiKey: '0b0598a13a504cf8c531c0ef14fd426631fcd8c3',
+      apiKey: 'AIzaSyAM2PqI2i42qud73TZPP0XLfpFXk6DRueI',
       discoveryDocs: ['https://sheets.googleapis.com/$discovery/rest?version=v4'],
     }).then(() => {
 
