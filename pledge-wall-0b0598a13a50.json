@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "pledge-wall",
+  "private_key_id": "0b0598a13a504cf8c531c0ef14fd426631fcd8c3",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCkJpAovfX1+xEC\nAQPXYuyT6eV0yULiY0H8Mo0IG9s3RoRVC2gqNJWcmIDxyqXD+RjEFiAHL33kRBQb\nvallJBoZGJGq4higzKHOlCs8rkF3Y+3+2nzNqM+44DB5AsZTXlU2TtDblBrRwagB\nCmDlUTS0Lsobd2ikbmxLcbcmh8TscywpZb61HzTDuxft/oK69zgmJeL812Z4OS7G\nXXrWRPt0g31F8wywLroTGNhivC4cgB/pj0tTOzxYi2HJScHye7nmIQpZv2FFvQyd\nyuXmabS2nt5xBWaqsSMn7fDSgpyNhhGkb59nB2+fJqcYvPZDkka6aohcFjq/SIj8\nvHhy4ciFAgMBAAECggEABB5sfAsBFIIdlAZn1AwsvGXZLBbLZtgohtDTPKm9YtzK\n/+ygddI02YHzAXOAuN2wH58D1dT9A7DVLMewMxtEzF/2x79Z8KDAEjCwQX5sFFSd\nlCzVhqHFvzh9VDaqDfgjizsWKaU2nGWsBRONl0/l4N+LryhOGad54fHaS/fft08b\nHPulxmO124Ygz4IwyoK17mZleRuT55brMTN2fYLUbEM+XYk0F5MdtZYTOSXbPrMa\nBD/DQLVZJDa7e43+eHFRVvCThhejFroZjkcM7frpVQsNbZsHCZbNkwthk8hz9URK\nanDRFknOtRmJUu/Ob7/TDikrWsaoAnx2cn171j3VwQKBgQDRmoz+keeoppYafoHF\nDpaAtkv8uz5LLTSm6CAPp+i9Zt0dIZoSkCsM2udqNGpme9x5Q31bZuD71pW4wlfy\nwG0g6Iq+pIHmchx6TQlCJhOTX0Ww4RluYfqkzKWGhIH2rsbwS3WXeM/KQ7t/wsRk\nFggLt+8NuppOpUzImfszB3zlkwKBgQDIfFvH2K0zHgvSfbAryFavPPI0YPwY3NgX\n5sCC1J+/Kcrp2HHokXgy7AyiVQkjoboYW8K5VC5f9ADHHUU2h+J0R7yFEMULjGKI\ntWbHgAPm890VPliQ43q0unoQw///EGK+MHtrSYL58CMqYCxjMsrU7GBCY3RK/VWw\nxg1c6ttohwKBgQCX/zCBpwLMLUmqmtS2NtbzLb863fnVgEmvQ6OEVuoS91YfOu/E\nyGE/qDqqrKn/+ZAvK77rGlbKqZjXa69lbR91/swmZZuBpnx6QAUXwA7wDuW11/ae\nMlUVTwY13z9zyNihBseWeViNv8JnarEKN2PMQ60KUqh1oa9lxSwBnEt5GwKBgQC8\nYX2sDsDP40+gfVFoElrBVjcPWIIIqpqx+rSxOjDQYuizShneObIDxyEn91cbD//Y\nm4AgvCTHLHL+pVY/ovb5494T+mnsLAD6C9mDY5pHDKWULHzzx4uo/f9seX61oCPo\nKY4OhYh4aVfhnXSX0UYdQ+4+80x2mgxGihJMWLHJSQKBgATlF7EXjIq9NLViarRs\nw3Hu1HFenddlEFhEAA36ygsXvnSxrl95yl37qjjIXEG0OmI1JlWOty1jpfAH65ov\n+6MoA42DHb5a9iC8MvQ9V+ij+55xng3to6O7eL4vOqaGIPOYutUtdV7d8qwHyUBo\nrn4+IFJLN3cqKl55mz2QNwkw\n-----END PRIVATE KEY-----\n",
+  "client_email": "pledge-wall@pledge-wall.iam.gserviceaccount.com",
+  "client_id": "111146627914593689931",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/pledge-wall%40pledge-wall.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
