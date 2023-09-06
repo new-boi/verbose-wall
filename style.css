@@ -1,0 +1,219 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+
+    font-family:'Poppins', sans-serif;
+    color: white;
+    overflow: hidden;
+
+
+}
+
+.main{
+    width: 100vw;
+    height: 100vh;
+    background: rgb(245,245,245);
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 5fr 1.5fr;
+    background: url(bg1.jpg) no-repeat center center fixed;
+
+  
+
+
+
+
+
+}
+
+.container{
+    border: 2px solid black;
+}
+
+.container-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 2rem 3rem 2rem;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    backdrop-filter: blur(2px);
+}
+
+
+.scan{
+    display: flex;
+    width: 100%;
+    align-items: end;
+    gap: 1rem;
+}
+
+
+.container-1 p{
+    padding: 1em 0rem;
+    font-weight: 300;
+}
+
+.container-1 h1{
+    line-height:100%;
+}
+
+
+h1{
+    font-size: 4em;
+    text-align: start;
+}
+h2{
+    font-size: 1.75rem;
+}
+p{
+    font-weight: normal;
+    font-size: 1.5rem;
+    text-align: start;
+    color: white;
+}
+
+.qr{
+    background-color: transparent;
+    box-shadow: inset 0 0 0 5px rgb(255, 255, 255), inset 0 0 0 10px rgb(0, 0, 0); 
+    width: 100px;
+    height:100px;
+}
+
+.container-2{
+    padding-right: 4rem;
+    padding-bottom: 3rem    ;
+    border-left: 2px solid black;
+    border-bottom:  2px solid black;
+    padding-top: 10em
+}
+
+
+#pledge_count {
+    text-align: end;
+    padding-right: 25px;
+}
+
+.card_container{
+    border: 1px solid red;
+
+    display: grid;
+    height: 600px;
+    padding: 0px 25px 1em 0;
+    grid-gap: 10px;
+    /* width: 100%; */
+    grid-template-columns: repeat(5,minmax(225px,1fr)); 
+    grid-template-rows: repeat(2,300px); 
+    grid-auto-rows: 300px;
+  
+
+    overflow-x: auto;
+}
+
+
+.card_container::-webkit-scrollbar {
+    display: none;
+}
+
+
+.container-2 h2{
+    text-align: end;
+}
+
+.card{
+    background-color: rgb(255, 255, 255);
+    padding: 1em;
+
+    filter: drop-shadow(6px 6px 7px rgba(0, 33, 41, 0.6));
+}
+
+.name {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.location{
+    font-size: 1rem;
+}
+
+.contents{
+    font-size: 1rem;
+    padding: 2em 0 0 0;
+}
+
+.card_content{
+    color: #005473;
+}
+
+.card:nth-child(even){
+    background-color: #005473;
+}
+
+
+
+.card:nth-child(even) .card_content{
+    color: #ffffff;
+}
+
+
+
+.container-3{
+    grid-area: 2/1/2/3;
+    display: flex;
+
+    padding-left: 2rem;
+    padding-top: 6rem;
+    padding-bottom: 3rem;
+    border-top: 2px solid black;
+    backdrop-filter: blur(2px);
+}
+
+.logo{
+    width: 115px;
+    height: 115px;
+    padding-right: 2rem;
+}
+
+
+.container-3 p{
+    font-size: 0.75em;
+}
+
+.sosmed{
+    padding: 1.5rem 0;
+    display: flex;
+    align-items: center;
+
+}
+.sosmed_icon{
+    width: 25px;
+    height: 25px;
+    padding-right:  0.5em;
+}
+.sosmed a{
+    padding-right: 1em  ;
+    text-decoration: none;
+    color: white;
+}
+
+.sosmed p{
+    display: inline-flex;
+    align-items: center;
+    padding-right: 1em;
+
+    
+}
+
+input{
+    background: none;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.151);
+    font-size: 1.5em;
+    width: 50%;
+    color: white;
+    outline:none;
+    font-weight: 300;
+}
+
