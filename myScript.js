@@ -48,7 +48,7 @@ async function listMajors() {
     // Fetch first 10 files
     response = await gapi.client.sheets.spreadsheets.values.get({
       spreadsheetId: '1t-GrI2hdGaFUobDVyGCCl-zxfH5wP_2bErOdaDJXJuo',
-      range: 'Sheet1s',
+      range: 'Sheet1',
     });
   } catch (err) {
     // document.getElementById('content').innerText = err.message;
