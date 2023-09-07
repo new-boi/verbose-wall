@@ -62,5 +62,5 @@ async function listMajors() {
   // Flatten to string to display
   const output = range.values.reduce((str, row) => `${str}${row[0]}, ${row[4]}\n`,'Name, Major:\n');
   document.getElementById('content').innerText = output;
-  console.log(output);
+  console.log(range);
 }
