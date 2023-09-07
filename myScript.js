@@ -50,12 +50,30 @@ function readDataFromSheet() {
 }
 
 
+function writeTo() {
+  const spreadsheetId = 'your-spreadsheet-id';
+  const values = [['John Doe', 'New York', 'This is a sample sentence.']];
+
+  gapi.client.sheets.spreadsheets.values.append({
+    spreadsheetId,
+    range: 'A1', // Update this to your desired range
+    valueInputOption: 'RAW',
+    resource: { values },
+  }).then(() => {
+    console.log('Data written to Google Sheets.');
+  }).catch((error) => {
+    console.error('Error writing to Google Sheets:', error);
+  });
+}
+
+
   function initGoogleApiClient() {
     // Initialize the Google API client with your API key and discoveryDocs
     gapi.client.init({
       apiKey: 'AIzaSyAM2PqI2i42qud73TZPP0XLfpFXk6DRueI',
       discoveryDocs: ['https://sheets.googleapis.com/$discovery/rest?version=v4'],
     }).then(() => {
+      writeTo();
 
         readDataFromSheet(); // Call the function that interacts with Google Sheets
     }).catch((error) => {
