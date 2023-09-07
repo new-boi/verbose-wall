@@ -51,12 +51,12 @@ async function listMajors() {
       range: 'Sheet1s',
     });
   } catch (err) {
-    document.getElementById('content').innerText = err.message;
+    // document.getElementById('content').innerText = err.message;
     return;
   }
   const range = response.result;
   if (!range || !range.values || range.values.length == 0) {
-    document.getElementById('content').innerText = 'No values found.';
+    // document.getElementById('content').innerText = 'No values found.';
     return;
   }
   // Flatten to string to display
