@@ -70,7 +70,8 @@ function writeTo() {
   function initGoogleApiClient() {
     // Initialize the Google API client with your API key and discoveryDocs
     gapi.client.init({
-      apiKey: 'AIzaSyAM2PqI2i42qud73TZPP0XLfpFXk6DRueI',
+      clientId: '1030257145728-jk2qipcuonehobecfa8taaggkqg04k2s.apps.googleusercontent.com',
+      scope: 'https://www.googleapis.com/auth/spreadsheets',
       discoveryDocs: ['https://sheets.googleapis.com/$discovery/rest?version=v4'],
     }).then(() => {
       writeTo();
