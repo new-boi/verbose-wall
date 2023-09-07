@@ -15,16 +15,12 @@ function gapiLoaded() {
 
 listMajors();
 
-
-
-
 async function initializeGapiClient() {
   await gapi.client.init({
     apiKey: API_KEY,
     discoveryDocs: [DISCOVERY_DOC],
   });
   gapiInited = true;
-  maybeEnableButtons();
 }
 
 
@@ -35,15 +31,8 @@ function gisLoaded() {
     callback: '', // defined later
   });
   gisInited = true;
-  maybeEnableButtons();
 }
 
-
-function maybeEnableButtons() {
-  if (gapiInited && gisInited) {
-    document.getElementById('authorize_button').style.visibility = 'visible';
-  }
-}
 
 async function listMajors() {
   console.log("text");
