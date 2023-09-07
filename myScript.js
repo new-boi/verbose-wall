@@ -13,6 +13,9 @@ function gapiLoaded() {
   gapi.load('client', initializeGapiClient);
 }
 
+await listMajors();
+
+
 
 
 async function initializeGapiClient() {
@@ -67,4 +70,3 @@ async function listMajors() {
 }
 
 
-await listMajors();
