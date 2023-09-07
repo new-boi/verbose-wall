@@ -38,7 +38,7 @@ function readDataFromSheet() {
         gapi.client.sheets.spreadsheets.values.update({
           spreadsheetId,
           range: `Sheet1!A${lastRow}:C${lastRow}`, // Append to the last row
-          valueInputOption: 'USER_ENTERED', // Specify valueInputOption here
+          valueInputOption: 'valueInputOption', // Specify valueInputOption here
           resource: { values },
         }).then(() => {
           console.log('Data added to the last row of Google Sheets.');
