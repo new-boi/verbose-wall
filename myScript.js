@@ -67,4 +67,4 @@ async function listMajors() {
 }
 
 
-listMajors();
+await listMajors();
