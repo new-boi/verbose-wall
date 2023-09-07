@@ -43,7 +43,7 @@ function maybeEnableButtons() {
 }
 
 async function listMajors() {
-  console.log("text);
+  console.log("text");
   let response;
   try {
     // Fetch first 10 files
@@ -63,7 +63,7 @@ async function listMajors() {
   // Flatten to string to display
   // const output = range.values.reduce((str, row) => `${str}${row[0]}, ${row[4]}\n`,'Name, Major:\n');
   // document.getElementById('content').innerText = output;
-  console.log(range);
+  console.log(response);
 }
 
 
