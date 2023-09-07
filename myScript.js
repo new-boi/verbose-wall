@@ -43,6 +43,7 @@ function maybeEnableButtons() {
 }
 
 async function listMajors() {
+  console.log("text);
   let response;
   try {
     // Fetch first 10 files
