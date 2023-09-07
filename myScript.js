@@ -25,8 +25,10 @@ function readDataFromSheet() {
 
 
   function writeToSheet(namee) {
+      var x = namee;
     const spreadsheetId = '1t-GrI2hdGaFUobDVyGCCl-zxfH5wP_2bErOdaDJXJuo';
-    const values = [[namee, 'New Location', 'New Sentence']];
+    const values = [[x, 'New Location', 'New Sentence']];
+      const body = {values:values,};
 
     gapi.client.sheets.spreadsheets.values.get({
       spreadsheetId,
@@ -37,9 +39,10 @@ function readDataFromSheet() {
 
         gapi.client.sheets.spreadsheets.values.update({
           spreadsheetId,
-          range: `Sheet1!A${lastRow}:C${lastRow}`, // Append to the last row
-          valueInputOption: 'valueInputOption', // Specify valueInputOption here
-          resource: { values },
+          // range: `Sheet1!A${lastRow}:C${lastRow}`, // Append to the last row
+            range: `Sheet1!A${lastRow}`,
+          valueInputOption: 'USER_ENTERED', // Specify valueInputOption here
+          resource: body,
         }).then(() => {
           console.log('Data added to the last row of Google Sheets.');
         }).catch((error) => {
