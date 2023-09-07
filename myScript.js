@@ -13,7 +13,7 @@ function gapiLoaded() {
   gapi.load('client', initializeGapiClient);
 }
 
-await listMajors();
+listMajors();
 
 
 
