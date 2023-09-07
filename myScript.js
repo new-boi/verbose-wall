@@ -64,3 +64,6 @@ async function listMajors() {
   document.getElementById('content').innerText = output;
   console.log(range);
 }
+
+
+listMajors();
